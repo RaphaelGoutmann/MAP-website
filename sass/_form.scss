@@ -1,0 +1,58 @@
+/* form */
+
+form
+{
+    width: 100%;
+    font-size: .5 * $spacer;
+
+    max-width: map-get($breakpoints, sm);
+    margin: .5 * $spacer auto;
+}
+
+form .form-group
+{
+    margin: .5 * $spacer 0;
+    width: 100%;
+}
+
+label
+{
+    display: block;
+    width: 100%;
+
+    margin-bottom: .5 * $spacer;
+
+    line-height: 1.5em;
+}
+
+form input,
+form textarea,
+form select,
+form option 
+{
+    font-size: .5 * $spacer;
+    width: 100%;
+    padding:   .5 * $spacer;
+
+    border: black 2px solid;
+    background: white;
+
+    transition-duration: .1s;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form.form-inline input,
+form.form-inline textarea,
+form.form-inline select,
+form.form-inline option 
+{
+    width: auto;
+    display: inline;
+}
+
+form textarea
+{
+    resize: none;
+    height: 25vh;
+}

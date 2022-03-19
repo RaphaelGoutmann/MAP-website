@@ -1,0 +1,23 @@
+/* button */
+
+.btn
+{
+    font-size: .5 * $spacer;
+    
+    border: black 2px solid;
+    background: $body-fg;
+    color: $body-bg;
+    
+    padding: .5 * $spacer .75 * $spacer;
+    margin: 1 * $spacer 0;
+
+    cursor: pointer;
+
+    transition: all .1s;
+}
+
+.btn:hover
+{
+    background: $body-bg;
+    color: $body-fg;
+}

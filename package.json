@@ -1,0 +1,14 @@
+{
+  "name": "makeaphone",
+  "version": "1.0.0",
+  "description": "Make a phone website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:css"
+  },
+  "author": "Raphaël Goutmann",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}

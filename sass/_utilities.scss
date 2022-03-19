@@ -1,0 +1,61 @@
+/* utilities */
+
+.flex-row { flex-direction: row;    }
+.flex-col { flex-direction: column; }
+.flex-col-reverse { flex-direction: column-reverse; }
+.flex-row-reverse { flex-direction: row-reverse;    }
+
+.block  { display: block;  }
+.inline { display: inline; }
+
+.flex
+{
+    display: flex;
+}
+
+.flex-1 
+{
+    flex: 1 1 0;
+}
+
+.gap
+{
+    gap: 2 * $spacer;
+}
+.no-gap 
+{ 
+    gap: 0; 
+}
+
+.items-center { align-items: center; }
+
+.justify-center  { justify-content: center; }
+.justify-start   { justify-content: start;  }
+.justify-end     { justify-content: end;    }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around;  }
+.justify-evenly  { justify-content: space-evenly;  }
+
+.text-center  { text-align: center; }
+.text-left    { text-align: left; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
+
+.small 
+{
+    color: $secondary;
+
+    font-size: .7 * $body-font-size;
+    line-height: 1.5em;
+}
+
+.big
+{
+    font-size: 1.3 * $body-font-size;
+    line-height: 1.5em;
+}
+
+.hidden
+{
+    display: none !important;
+}
