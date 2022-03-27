@@ -6,6 +6,11 @@ navBtn.addEventListener('click', () =>
     header.classList.toggle('active')
 })
 
+document.querySelector('main').addEventListener('scroll', () =>
+{
+    header.classList.remove('active')
+})
+
 const loadscreen = document.querySelector('.loadscreen')
 
 window.addEventListener("DOMContentLoaded", () =>

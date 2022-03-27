@@ -38,27 +38,11 @@ a
     cursor: pointer;
     color: $primary;
 
-    position: relative;
+    transition: color .3s;
 
-    &::after
+    &:hover
     {
-        content: "";
-
-        position: absolute;
-
-        bottom: -5px;
-        left: 0;
-        
-        height: 2px;
-        width: 0;
-
-        background: currentColor;
-        transition: width .3s;
-    }
-
-    &:hover::after
-    {
-        width: 100%;
+        color: darken($primary, 10%);
     }
 }
 
