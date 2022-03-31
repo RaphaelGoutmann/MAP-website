@@ -5,7 +5,7 @@ form
     width: 100%;
     font-size: .5 * $spacer;
 
-    max-width: map-get($breakpoints, sm);
+    max-width: 500px;
     margin: .5 * $spacer auto;
 }
 

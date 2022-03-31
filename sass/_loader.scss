@@ -13,15 +13,53 @@
 
     height: 100vh;
     width: 100vw;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition: all .25s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &.loaded
+    {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
-.loadscreen.loaded
+// clock
+
+.points
 {
-    animation: slide .75s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .75 * $spacer;
+
+    .point 
+    {
+        background: $body-fg;
+
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+
+        transition-duration: .2s;
+    }   
+
+    .point:nth-child(1) { animation: jump .3s ease-in-out .1s infinite alternate; }
+    .point:nth-child(2) { animation: jump .3s ease-in-out .2s infinite alternate; }
+    .point:nth-child(3) { animation: jump .3s ease-in-out .3s infinite alternate; }
 }
 
-@keyframes slide
+@keyframes jump
 {
-    from { transform: translateX(0);     }
-    to   { transform: translateX(-100%); }
+    from {  transform:  translateY(0); }
+    to   { transform: translateY(10px); }
 }
+

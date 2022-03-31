@@ -2,8 +2,15 @@
 
 .flex-row { flex-direction: row;    }
 .flex-col { flex-direction: column; }
+
 .flex-col-reverse { flex-direction: column-reverse; }
 .flex-row-reverse { flex-direction: row-reverse;    }
+
+@media screen and (max-width: 600px) 
+{
+    .flex-row         { flex-direction: column-reverse; }
+    .flex-row-reverse { flex-direction: column-reverse; }
+}
 
 .block  { display: block;  }
 .inline { display: inline; }
@@ -45,7 +52,7 @@
 {
     color: $secondary;
 
-    font-size: .7 * $body-font-size;
+    font-size: .7rem;
     line-height: 1.5em;
 }
 

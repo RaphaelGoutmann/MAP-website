@@ -2,6 +2,7 @@
 
 body, html
 {
+
     scroll-behavior: smooth;
 
     font-family: Helvetica, Arial, sans-serif;
@@ -11,6 +12,25 @@ body, html
 
     color:      $body-fg;
     background: $body-bg;
+}
+
+@media screen and (max-width: 600px)
+{
+    html, body
+    { 
+        font-size: .8 * $body-font-size; 
+        text-align: center !important;
+    }
+}
+
+@media screen and (max-width: 400px) 
+{
+    html, body 
+    { 
+        font-size: .65 * $body-font-size; 
+    }
+
+    section { padding: 4 * $spacer  1.5 * $spacer !important; }
 }
 
 h1, h2, h3, h4, h5, h6
@@ -24,7 +44,7 @@ section
     height: 100vh;
     width: 100%;
 
-    padding: 3 * $spacer;
+    padding: 4 * $spacer 3 * $spacer;
 }
 
 p
@@ -70,3 +90,5 @@ img
     width: 100%; 
     height: 100%; 
 }
+
+

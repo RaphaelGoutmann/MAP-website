@@ -8,6 +8,8 @@
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 
+    scroll-behavior: smooth;
+
     .scroll-snap-block
     {
         scroll-snap-align: center;

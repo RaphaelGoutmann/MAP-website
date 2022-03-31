@@ -13,7 +13,7 @@ document.querySelector('main').addEventListener('scroll', () =>
 
 const loadscreen = document.querySelector('.loadscreen')
 
-window.addEventListener("DOMContentLoaded", () =>
+window.addEventListener("load", () =>
 {
     loadscreen.classList.add('loaded')
 });
